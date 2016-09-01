@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dip"
+    android:stretchColumns="1" >
+
+    <Button
+        android:id="@+id/create_group"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:text="@string/create_group" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/only_me" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anyone" />
+    </RadioGroup>
+
+    <TableRow android:paddingTop="5dip" >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:ems="10"
+            android:hint="@string/group_name"
+            android:inputType="textPersonName" >
+		
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow android:paddingTop="5dip" >
+
+        <TextView
+            android:layout_marginLeft="5dip"
+            android:gravity="left"
+            android:text="@string/accounts" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/accounts"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:paddingTop="5dip" />
+
+</TableLayout>
